@@ -12,7 +12,7 @@ struct Node* swap(struct Node* ptr1, struct Node* ptr2)
 	struct Node* tmp = ptr2->next;
 	ptr2->next = ptr1;
 	ptr1->next = tmp;
-	return ptr2;
+	return ptr1;
 }
 
 void bubbleSort(struct Node** head, int count)
