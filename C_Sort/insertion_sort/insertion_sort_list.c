@@ -24,7 +24,7 @@ void sortedInsert(struct node *newnode) {
     struct node *current = sorted;
     while (current->next != NULL
            && current->next->data < newnode->data) {
-      current->next = current->next;
+      current = current->next;
     }
     newnode->next = current->next;
     current->next = newnode;
@@ -48,7 +48,7 @@ void printlist(struct node *head) {
     head = head->next;
   }
 
-  printf("NULL");
+  printf("NULL\n\n");
 }
 
 int main() {
