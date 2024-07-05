@@ -62,7 +62,7 @@ int main() {
   printlist(head);
   printf("\n");
 
-  insertionsort(head);
+  insertionsort();
 
   printf("Linked List after sorting:\n");
   printlist(head);
